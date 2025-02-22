@@ -60,3 +60,6 @@ img{
 width:100%;
 height: auto;
 }
+.navbar ul li .nav-link.active{
+color:blue;
+}
