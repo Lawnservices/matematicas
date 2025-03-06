@@ -59,7 +59,11 @@ color: #0b5fb3;
 img{
 width:100%;
 height: auto;
+width: 80%; border-radius: 0.4rem;
 }
 .navbar ul li .nav-link.active{
 color:blue;
+}
+.introFormatico .orden{
+color: #073461;
 }
