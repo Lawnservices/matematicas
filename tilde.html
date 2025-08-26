@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="footer.css">
   <title>Palabras con Tilde en Español</title>
   <style>
     body {
@@ -59,24 +60,31 @@
     th {
       background-color: #dbeafe;
     }
-    #casa{
-    justify-content: space-around;
+  #casa{
+justify-content: space-around;
 justify-items: center;
 display: flex;
 background-color: #0045;
 color: #fff;
 align-items: center;
 position:static; 
- 
+overflow: hidden;
+padding: 0;
+margin: 0; 
     }
    
-    .home {
-    list-style: none;
+#casa .home::before {
+content: '';
+list-style: none;
 text-decoration: none;
     }
+
+#casa .home{
+padding: 16px;
+}    
 .home a{
 font-size: 22px;
-padding: 14px 14px;
+font-weight: bolder; 
 list-style: none;
 text-decoration: none;
 color: #000;
@@ -190,6 +198,8 @@ color: #000;
       </tr>
     </table>
   </div>
-
+ <footer>
+        <div id="fecha">© | <span id="años"></span> Matemáticas</div>
+    </footer>
 </body>
 </html>
